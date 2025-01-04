@@ -1,4 +1,4 @@
-// import './App.css'
+import './App.css'
 import Navbar from './components/Navbar'
 import Textform from './components/Textform';
 import React, {useState} from 'react';
@@ -8,10 +8,10 @@ function App() {
   const switchButton =()=>{
         if(mode==='light'){
            setMode('dark');
-          document.body.style.backgroundColor='#324352';
+          document.body.style.backgroundColor='rgb(34 90 140)';
         }else{
           setMode('light');
-          document.body.style.backgroundColor='white';
+          document.body.style.backgroundColor='Grey';
         }
      }
   return (
