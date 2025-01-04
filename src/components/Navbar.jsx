@@ -4,7 +4,8 @@ import PropTypes from 'prop-types'
 
 export default function Navbar(props) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-secondary">
+    <nav className="navbar navbar-expand-lg navbar-light bg-info">
+    
   <a className="navbar-brand" href="/">{props.title}</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
@@ -18,8 +19,6 @@ export default function Navbar(props) {
       <li className="nav-item">
         <a className="nav-link" href="/">{props.aboutTitle}</a>
       </li>
-      
-     
     </ul>
     <form className="form-inline my-2 my-lg-0">
       <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
