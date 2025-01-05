@@ -9,6 +9,9 @@ export default function Textform(props) {
         // console.log("UpperCase");
         let newText = text.toUpperCase();
         setText(newText)
+        if(newText!==null && newText!=='' ){
+        props.displayAlert("Upper Case Applied Successfuly","success");
+        }
     }
 
     const handleOnchange = (event)=>{
@@ -20,11 +23,19 @@ export default function Textform(props) {
         // console.log("handleTolowerCase");
         let lowerText = text.toLowerCase();
         setText(lowerText);
+        if(lowerText!==null && lowerText!=='' ){
+            props.displayAlert("Lower Case Applied Successfully","success");
+        }
+        
+       
     }
 
     const handleCopyText = ()=>{
         let textBox = document.getElementById("MyTextForm");
         navigator.clipboard.writeText(textBox.value);
+        if(textBox.value !==null && textBox.value !==''){
+            props.displayAlert("Your Text is copied Successfully.","success");
+        }
     }
     const handleExtraSpace = ()=>{
         let extraspace = text.trim()  
@@ -32,10 +43,15 @@ export default function Textform(props) {
         .replace(/[_-](.)/g, (_, char) => char.toUpperCase())  
         .replace(/^([A-Z])/, match => match.toLowerCase());  
         setText(extraspace);
+        if(extraspace!==null && extraspace!=='' ){
+        props.displayAlert("Extra Space Removed Successfully.","success");
+        }
     }
 
     const handleClearText = ()=>{
         setText("");
+
+        props.displayAlert("Text Content removed.","success");
     }
 
 
@@ -47,11 +63,11 @@ export default function Textform(props) {
       
         <textarea className="form-control border-dark" value={text}  onChange={handleOnchange} id="MyTextForm" rows="8"></textarea>
     </div>
-    <button className="btn btn-primary m-2" onClick={handleUperCase}  >Convert to Uppercase</button>
-    <button className="btn btn-primary m-2" onClick={handleLowerCase} >Convert to Lowercase</button>
-    <button className="btn btn-primary m-2" onClick={handleExtraSpace} >Extra Space</button>
-    <button className="btn btn-primary m-2" onClick={handleCopyText} >Copy Text</button>
-    <button className="btn btn-primary m-2" onClick={handleClearText} >Clean</button>
+    <button className="btn btn-primary btn-sm m-2" onClick={handleUperCase}  >Uppercase</button>
+    <button className="btn btn-primary btn-sm m-2" onClick={handleLowerCase} >Lowercase</button>
+    <button className="btn btn-primary btn-sm m-2" onClick={handleExtraSpace} >Extra Space</button>
+    <button className="btn btn-primary btn-sm m-2" onClick={handleCopyText} >Copy Text</button>
+    <button className="btn btn-primary btn-sm m-2" onClick={handleClearText} >Clean</button>
 
 
     <div className={`my-4 text-${props.mode==='dark'?'light':'dark'}`}>
