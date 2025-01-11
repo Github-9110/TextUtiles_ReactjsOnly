@@ -4,34 +4,28 @@ export default function Aboutus() {
   return (
         <div className="accordion my-4" id="accordionExample">
         <div className="card">
-            <h2 className = "text my-4 text-center">About Us</h2>
+        <h2 className = "text my-4 text-center">About Us</h2>
+        <div className="card" style={{width: '20rem', margin:'auto'}}>
+            <img src="/shubham.jpg" className="card-img-top w-80" alt="Shubh.."/>
+            <div className="card-body">
+            <p className="card-text">
+                 <strong>Name</strong>: Develoepr Shubham.. <br />
+                 <strong>Technology</strong> : vite + React Js and JavaScript , Bootstrap  <br /><br />                
+            </p>
+            </div>
+        </div>
         <div className="card-header" id="headingOne">
         <h2 className="mb-0">
-        <button className="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            TextUtil one
+        <button className="btn btn-link btn-block text-left" ta-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <strong>About to Project</strong>
         </button>
         </h2>
         </div>
 
         <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div className="card-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Labore fugiat laborum laudantium, corporis molestiae eveniet 
-         doloribus ab reprehenderit nesciunt cupiditate excepturi 
-         consequatur? Doloribus, optio, quam hic facilis delectus 
-         inventore quisquam quo possimus eius numquam, aliquam 
-         ea? Nostrum ipsa necessitatibus vel laboriosam ullam. 
-         Alias, culpa sint. Asperiores eum beatae dignissimos 
-         libero repellat error velit odio enim autem eaque 
-         molestiae dolores recusandae quibusdam molestias,
-          perferendis debitis magnam corrupti, numquam culpa
-           est ullam natus sunt. Exercitationem culpa quae 
-           iste ratione temporibus impedit optio, porro nihil
-            vero explicabo dicta sapiente eaque dolor voluptatibus
-             possimus molestias facere officiis eos rem? Eveniet
-              itaque vero impedit molestias! Some placeholder content
-               for the first accordion panel. This panel is shown by default,
-                thanks to the <code>.show</code> class.
+       <strong>Hi ! user </strong>: This is TextUtil Project Where user can manipulate own content 
+                 like UpperCase, LowerCase, Romove Extra space ,time read word and Count total Character, words and  copy the result Converted Content. <br />
         </div>
         </div>
         </div>
@@ -39,7 +33,7 @@ export default function Aboutus() {
         <div className="card-header" id="headingTwo">
         <h2 className="mb-0">
         <button className="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        TextUtil Second
+        TextUtil One
         </button>
         </h2>
         </div>
@@ -71,7 +65,7 @@ export default function Aboutus() {
         <div className="card-header" id="headingThree">
         <h2 className="mb-0">
         <button className="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        TextUtil Third 
+        TextUtil Two 
         </button>
         </h2>
         </div>
