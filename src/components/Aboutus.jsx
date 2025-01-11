@@ -6,10 +6,10 @@ export default function Aboutus() {
         <div className="card">
         <h2 className = "text my-4 text-center">About Us</h2>
         <div className="card" style={{width: '20rem', margin:'auto'}}>
-            <img src="/shubham.jpg" className="card-img-top w-80" alt="Shubh.."/>
+            <img src="/shubham.jpg" className="card-img-top w-auto" alt="Shubh.."/>
             <div className="card-body">
             <p className="card-text">
-                 <strong>Name</strong>: Develoepr Shubham.. <br />
+                 <strong>Name</strong>: Developer Shubham.. <br />
                  <strong>Technology</strong> : vite + React Js and JavaScript , Bootstrap  <br /><br />                
             </p>
             </div>
