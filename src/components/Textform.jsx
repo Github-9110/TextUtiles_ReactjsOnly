@@ -57,7 +57,7 @@ export default function Textform(props) {
 
   return (
     <>
-    <div className="container">
+    {/* <div className="container"> */}
     <div className=" mb-3">
         <h3 className={`text-${props.mode==='dark'?'white':'dark'}`}>{props.heading}</h3>
       
@@ -72,12 +72,13 @@ export default function Textform(props) {
 
     <div className={`my-4 text-${props.mode==='dark'?'light':'dark'}`}>
     <h5>Text summary</h5>
-    <p>{text.split(" ").length} words and {text.length} characters</p>
+    <p>{text.split(/\s+/).filter((element)=>{
+     return element.length!==0}).length} words and {text.length} characters</p>
     <p>{0.008*text.split(" ").length} per minute read word. </p>
     <h5>Preview</h5>
     <p>{text.length>0?text:" Enter your text in Text area to Preview."}</p>
    </div>
-   </div>
+   {/* </div> */}
    
 </>
   )
